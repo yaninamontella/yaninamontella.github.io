@@ -101,3 +101,66 @@
             cursor: pointer;
             box-shadow: 0 4px 10px var(--shadow-light);
         }
+
+        .button:hover {
+            background-color: #0056b3; /* Azul más oscuro */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px var(--shadow-medium);
+        }
+
+        .button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px var(--shadow-light);
+        }
+
+        .button.powerbi {
+            background-color: var(--accent-color); /* Color amarillo/naranja de Power BI */
+            color: var(--text-color-dark); /* Texto oscuro para contraste */
+        }
+
+        .button.powerbi:hover {
+            background-color: #d1b10e;
+        }
+
+        /* Media queries para adaptar el diseño a pantallas más pequeñas */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+            .button {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola! Soy Yanina Montella</h1>
+        <img src="foto.jpg" alt="Foto de Yanina Montella" class="profile-image">
+        <p>¡Bienvenido/a a mi portfolio de Data Analysis! Aquí encontrarás una muestra de mis proyectos y mi experiencia profesional.</p>
+
+        <div class="button-container">
+            <a href="Yanina Montella-Bootcamp Data Analysis.pdf" class="button" target="_blank">
+                Ver Trabajo Práctico (PDF)
+            </a>
+            <a href="cv.pdf" class="button" target="_blank">
+                Descargar Currículum Vitae (PDF)
+            </a>
+            <a href="URL_DEL_ARCHIVO_PBIX_PUBLICADO_EN_DRIVE" class="button powerbi" target="_blank">
+                Ver Dashboard Power BI (Drive)
+            </a>
+        </div>
+    </div>
+</body>
+</html>
