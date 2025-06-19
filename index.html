@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Yanina Montella - Data Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff; /* Azul vibrante */
+            --secondary-color: #6c757d; /* Gris para texto secundario */
+            --accent-color: #f2c811; /* Amarillo Power BI */
+            --background-light: #f8f9fa; /* Fondo muy claro */
+            --background-dark: #e9ecef; /* Fondo ligeramente más oscuro */
+            --text-color-dark: #212529; /* Texto oscuro */
+            --text-color-light: #ffffff; /* Texto claro */
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --shadow-medium: rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: var(--text-color-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: var(--background-light);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px var(--shadow-medium);
+            text-align: center;
+            max-width: 550px;
+            width: 95%;
+            margin: auto; /* Centrar en pantallas grandes */
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 6px solid var(--primary-color); /* Borde acentuado */
+            box-shadow: 0 5px 15px var(--shadow-light);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2.8em;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--secondary-color);
+            font-size: 1.15em;
+            margin-bottom: 40px;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 100%;
+        }
+
+        .button {
+            display: block;
+            padding: 16px 25px;
+            text-decoration: none;
+            color: var(--text-color-light);
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px var(--shadow-light);
+        }
